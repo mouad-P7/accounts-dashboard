@@ -1,0 +1,49 @@
+:root{
+  // Primary Colors
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);  
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear-gradient(hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+  --youtube: hsl(348, 97%, 39%);
+  --gray: hsl(228, 12%, 44%);
+  
+  // Light Colors
+  --light-toggle: hsl(230, 22%, 74%);
+  --light-card-bg: hsl(227, 47%, 96%);
+  --light-card-hover: hsl(225, 100%, 98%);
+  --light-body-bg: hsl(225, 100%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  // Dark Colors
+  --dark-toggle: linear-gradient(hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+  --dark-card-bg: hsl(228, 28%, 20%);
+  --dark-card-hover: hsl(228, 34%, 66%);
+  --dark-body-bg: hsl(232, 19%, 15%);
+  --black: hsl(230, 17%, 14%);
+}
+
+// Light Mode
+@media (prefers-color-scheme: light) {
+  :root {
+    --toggle: var(--light-toggle);
+    --card-bg: var(--light-card-bg);
+    --card-hover: var(--light-card-hover);
+    --body-bg: var(--light-body-bg);
+    --theme-color: var(--white);
+    --theme-text: var(--black);
+  }
+}
+
+// Dark Mode
+@media (prefers-color-scheme: dark) {
+  :root {
+    --toggle: var(--dark-toggle);
+    --card-bg: var(--dark-card-bg);
+    --card-hover: var(--dark-card-hover);
+    --body-bg: var(--dark-body-bg);
+    --theme-color: var(--black);
+    --theme-text: var(--white);
+  }
+}
+

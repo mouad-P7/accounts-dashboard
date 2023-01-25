@@ -1,0 +1,12 @@
+@use '../base';
+
+main{
+  min-height: 10rem;
+  padding: 5rem 0;
+
+  h2{
+    display: block;
+    text-align: start;
+    padding: 4rem 0 3rem 0.4rem;
+  }
+}

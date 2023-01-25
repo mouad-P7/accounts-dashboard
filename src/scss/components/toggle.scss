@@ -1,0 +1,29 @@
+@use '../base';
+
+header{
+  #theme-toggle{display: none;}
+
+  .toggle-container{
+    position: relative;
+    background: var(--toggle);
+    height: 100%;
+    width: 6rem;
+    border-radius: 1.6rem;
+    display: flex;
+  }
+
+  .label-container:hover .toggle-container{
+    background-color: var(--dark-toggle);
+  }
+
+  .toggle-btn{
+    position: absolute;
+    top: 10.5%;
+    left: 0.4rem;
+    background-color: var(--body-bg);
+    width: 40%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+}

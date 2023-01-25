@@ -1,0 +1,55 @@
+*{font-family: var(--inter-font);}
+
+html{font-size: 62.5%;}// 1rem = 10px
+
+a, a:visited, a:active{text-decoration: none;}
+
+span, span *{
+  font-size: 1.8rem;
+  font-weight: var(--bold);
+}
+
+header{
+  h1{
+    font-size: 2.7rem;
+    font-weight: var(--bold);
+  }
+}
+
+main{
+  h2{
+    font-size: 2.5rem;
+    font-weight: var(--bold);
+  }
+}
+
+.card{
+  .followers, .subscribers{
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-weight: var(--regular);
+    padding-left: 0.5rem;
+  }
+
+  & > data{
+    font-size: 7rem;
+    font-weight: var(--bold);
+  }
+  .followers-update >span,.followers-update >data{
+    font-size: 1.5rem;}
+}
+
+.card-followers-container data[itemprop='update']{
+  font-size: 1.5rem;
+  font-weight: var(--bold);
+}
+.data-container > data{
+  font-size: 4.5rem;
+  font-weight: var(--bold);
+}
+
+footer{
+  p{
+    font-size: 1.7rem;
+  }
+}

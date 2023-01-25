@@ -1,0 +1,58 @@
+@use '../base';
+
+.facebook{border-top: solid 0.5rem var(--facebook);}
+.twitter{border-top: solid 0.5rem var(--twitter);}
+.instagram{border-top: solid 0.5rem var(--instagram);}
+.youtube{border-top: solid 0.5rem var(--youtube);}
+
+.card-followers-container > .card{aspect-ratio: 1.6;}
+.card-overview-container > .card{aspect-ratio: 2.5;}
+
+.card{
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+
+  &:hover{
+    background-color: var(--card-hover);
+  }
+
+  & > *{
+    width: 100%;
+    text-align: center;
+  }
+
+  & > data{color: var(--theme-text);}
+
+  .user-name, .followers, .subscribers, .account-container > span{color: var(--gray);}
+
+  .account, .followers-update, .account-container, .data-container{
+    display: flex;
+    align-items: center;
+  }
+  .account, .followers-update{justify-content: center;}
+  .account-container, .data-container{justify-content: space-between;}
+
+  .icon{
+    transform: scale(1.2);
+    margin: 0.7rem;
+  }
+
+  .followers-update > span,.followers-update > data{padding-top: 0.2rem;}
+
+  img[alt='icon-up'], img[alt='icon-down']{
+    transform: scale(1.5);
+    margin: 0.5rem;
+  }
+
+}
+
+.card-followers-container > .card .icon-youtube{padding-bottom: 0.2rem;}
+
+.data-container > data{color: var(--theme-text);}
