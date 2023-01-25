@@ -33,11 +33,15 @@
   .user-name, .followers, .subscribers, .account-container > span{color: var(--gray);}
 
   .account, .followers-update, .account-container, .data-container{
-    display: flex;
+    display: flex;}
+  .account, .followers-update{
+    justify-content: center;
     align-items: center;
   }
-  .account, .followers-update{justify-content: center;}
-  .account-container, .data-container{justify-content: space-between;}
+  .account-container, .data-container{
+    justify-content: space-between;
+    align-items: baseline;
+  }
 
   .icon{
     transform: scale(1.2);
