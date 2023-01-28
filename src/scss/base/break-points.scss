@@ -1,6 +1,8 @@
 $breakpoints: (// 1em = 16px
-  'small': 26.5em,// 420px
-  'xlarge': 80em// 1280px
+  'medium': 45em, // 720px
+  'large': 62em, // 992px
+  'xlarge': 70em, // 1120px
+  'wide': 85em // 1360px
 );
 
 @mixin breakpoint-min-width($size){

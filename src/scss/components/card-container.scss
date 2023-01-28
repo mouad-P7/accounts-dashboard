@@ -1,8 +1,11 @@
 @use '../base' as *;
 
-footer{
-  height: 4rem;
+.card-followers-container, .card-overview-container{
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
+
+

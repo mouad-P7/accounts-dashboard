@@ -1,4 +1,4 @@
-@use '../base';
+@use '../base' as *;
 
 .facebook{border-top: solid 0.5rem var(--facebook);}
 .twitter{border-top: solid 0.5rem var(--twitter);}
@@ -6,18 +6,24 @@
 .youtube{border-top: solid 0.5rem var(--youtube);}
 
 .card-followers-container > .card{aspect-ratio: 1.6;}
-.card-overview-container > .card{aspect-ratio: 2.5;}
+.card-overview-container > .card{
+  aspect-ratio: 2.5;
+  @include breakpoint-min-width(xlarge){flex: 1 0 calc(25vw - 6rem);}
+}
 
 .card{
   background-color: var(--card-bg);
   border-radius: 1rem;
   padding: 2rem;
+  flex: 1 0 24rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  width: 100%;
+
+  @include breakpoint-min-width(medium){flex: 1 0 30rem;}
+  @include breakpoint-min-width(large){flex: 1 0 20rem;}
 
   &:hover{
     background-color: var(--card-hover);
@@ -54,7 +60,6 @@
     transform: scale(1.5);
     margin: 0.5rem;
   }
-
 }
 
 .card-followers-container > .card .icon-youtube{padding-bottom: 0.2rem;}
