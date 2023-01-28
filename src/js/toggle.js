@@ -1,6 +1,7 @@
 //themeToggle = <input type="checkbox" id="theme-toggle">
 const themeToggle = document.getElementById('theme-toggle');
 const toggleBtn = document.getElementsByClassName('toggle-btn')[0];
+const toggleLabel = document.getElementsByClassName('label-container')[0];
 var theme = '';
  
 
@@ -37,7 +38,11 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener ('change', ()
 
 
 window.onload = () => {
-  themeToggle.addEventListener('change',() => {
+  toggleLabel.addEventListener('click',() => {
+    theme = theme == 'dark' ? 'light' : 'dark';
+    setThemeColor(theme);
+  })
+  themeToggle.addEventListener('click',() => {
     theme = theme == 'dark' ? 'light' : 'dark';
     setThemeColor(theme);
   })

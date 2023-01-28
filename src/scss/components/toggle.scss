@@ -5,8 +5,8 @@ header{
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -10;
     opacity: 0;
+    pointer-events: none;
   }
 
   .label-container:hover .toggle-container{
@@ -32,5 +32,11 @@ header{
     border-radius: 50%;
     transition: 0.3s;
     transform: translateX(0%);
+
+    @include breakpoint-min-width(medium){
+      top: 10%;
+      left: 0.6rem;
+      width: 36%;
+    }
   }
 }
