@@ -19,8 +19,7 @@ header{
 
   .toggle-text{color: var(--theme-text);}
 
-  .label-container {
-    // border: solid red 0.1px;
+  .label-container{
     position: relative;
     cursor: pointer;
     width: 100%;
@@ -29,4 +28,6 @@ header{
     justify-content: space-between;
     align-items: center;
   }
+  .label-container *:hover{cursor: pointer;}
+  
 }

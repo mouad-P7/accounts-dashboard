@@ -13,13 +13,10 @@ import "./images/icon-twitter.svg";
 import "./images/icon-up.svg";
 import "./images/icon-youtube.svg";
 
+/*
 // JQuery code
 $(document).ready(function(){
-  for(let i = 0; i < 5; i++){
-    let value = $('.card .followers-update > data, .card .today-update > data').attr('value');
-    console.log(value);
-  }
-
+  // let value = $('.card .followers-update > data, .card .today-update > data').attr('value');
 });
-
+*/
 

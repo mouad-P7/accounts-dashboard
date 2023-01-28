@@ -10,8 +10,8 @@
   
   // Light Colors
   --light-toggle: hsl(230, 22%, 74%);
-  --light-card-bg: hsl(227, 47%, 96%);
-  --light-card-hover: hsl(225, 100%, 98%);
+  --light-card-bg: hsl(225, 100%, 98%);
+  --light-card-hover: hsl(227, 47%, 96%);
   --light-body-bg: hsl(225, 100%, 98%);
   --white: hsl(0, 0%, 100%);
 
@@ -24,26 +24,23 @@
 }
 
 // Light Mode
-@media (prefers-color-scheme: light) {
-  :root {
-    --toggle: var(--light-toggle);
-    --card-bg: var(--light-card-bg);
-    --card-hover: var(--light-card-hover);
-    --body-bg: var(--light-body-bg);
-    --theme-color: var(--white);
-    --theme-text: var(--black);
-  }
+html[data-theme="light"]{
+  --toggle: var(--gray);
+  --card-bg: var(--light-card-bg);
+  --card-hover: var(--light-card-hover);
+  --body-bg: var(--light-body-bg);
+  --theme-color: var(--white);
+  --theme-text: var(--black);
 }
 
 // Dark Mode
-@media (prefers-color-scheme: dark) {
-  :root {
-    --toggle: var(--dark-toggle);
-    --card-bg: var(--dark-card-bg);
-    --card-hover: var(--dark-card-hover);
-    --body-bg: var(--dark-body-bg);
-    --theme-color: var(--black);
-    --theme-text: var(--white);
-  }
+html[data-theme="dark"]{
+  --toggle: var(--dark-toggle);
+  --card-bg: var(--dark-card-bg);
+  --card-hover: var(--dark-card-hover);
+  --body-bg: var(--dark-body-bg);
+  --theme-color: var(--black);
+  --theme-text: var(--white);
+
 }
 
