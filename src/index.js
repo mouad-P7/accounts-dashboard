@@ -1,5 +1,6 @@
 // import scripts
 import "./js/toggle";
+import "./js/update";
 
 // import styles
 import "./scss/style.scss";
