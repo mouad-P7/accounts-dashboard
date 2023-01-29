@@ -14,10 +14,3 @@ import "./images/icon-twitter.svg";
 import "./images/icon-up.svg";
 import "./images/icon-youtube.svg";
 
-/*
-// JQuery code
-$(document).ready(function(){
-  // let value = $('.card .followers-update > data, .card .today-update > data').attr('value');
-});
-*/
-

@@ -41,6 +41,6 @@ header{
 
     @include breakpoint-min-width(medium){flex-basis: 16rem;}
   }
-  .label-container *:hover{cursor: pointer;}
   
+  .label-container *:hover{cursor: pointer;}
 }
